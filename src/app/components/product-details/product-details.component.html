@@ -1,0 +1,19 @@
+@if(detailedProduct){
+<div class="col-6 mx-auto m-3">
+  <div class="card">
+    <img [src]="detailedProduct.image" class="card-img-top" width="200px" />
+    <div class="card-body">
+      <h5 class="card-title">
+        {{ detailedProduct.title }}
+      </h5>
+      <h6>{{ detailedProduct.price}}$</h6>
+      <h6>{{detailedProduct.description}}</h6>
+      <p></p>
+    </div>
+  </div>
+</div>
+}@else{
+<div class="d-flex justify-content-center">
+  <h1 class="m-5">No Data!</h1>
+</div>
+}
